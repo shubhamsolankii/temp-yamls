@@ -1,0 +1,34 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ahm-product
+  description: Product Catalog
+  tags:
+    - python
+    - ecommerce
+  links:
+    - url: https://example.com/products
+      title: Product Page
+      icon: shopping_cart
+    - url: https://example.com/sales
+      title: Sales Dashboard
+      icon: dashboard
+    - url: https://example.com/inventory
+      title: Inventory Management
+      icon: inventory
+    - url: https://example.com/support
+      title: Support
+      icon: help
+    - url: https://example.com/reports
+      title: Reports
+      icon: bar_chart
+  annotations:
+    backstage.io/source-template: template:default/python-template
+    backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/catalog'
+spec:
+  type: product
+  lifecycle: production
+  owner: team-b
+  system: ecommerce-platform
+  dependsOn: ['resource:product-db', 'resource:inventory-db']
+  apiConsumedBy: ['component:www-storefront', 'component:www-admin']
