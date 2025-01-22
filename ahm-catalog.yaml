@@ -7,21 +7,28 @@ metadata:
     - python
     - ecommerce
   links:
-    - url: https://example.com/products
-      title: Product Page
-      icon: shopping_cart
-    - url: https://example.com/sales
-      title: Sales Dashboard
-      icon: dashboard
-    - url: https://example.com/inventory
-      title: Inventory Management
-      icon: inventory
-    - url: https://example.com/support
-      title: Support
-      icon: help
-    - url: https://example.com/reports
-      title: Reports
-      icon: bar_chart
+    - url: https://example.com/infra-automations
+      title: Infra Automations
+      icon: build
+    - url: https://example.com/infra-access
+      title: Infra Access
+      icon: vpn_key
+    - url: https://example.com/log-defect
+      title: Log a Defect
+      icon: bug_report
+    - url: https://example.com/new-app-ci-request
+      title: New App CI Request
+      icon: add_circle
+    - url: https://example.com/create-change-order
+      title: Create Change Order
+      icon: assignment
+    - url: https://example.com/privacy
+      title: Privacy
+      icon: lock
+    - url: https://example.com/terms
+      title: Terms
+      icon: gavel
+      
   annotations:
     backstage.io/source-template: template:default/python-template
     backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/catalog'
